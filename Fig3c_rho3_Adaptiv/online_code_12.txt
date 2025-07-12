@@ -1,0 +1,18 @@
+H q[0]
+CONTROL q[0]
+SWAP q[4],q[1]
+ENDCONTROL
+H q[0]
+CNOT q[2],q[1]
+CNOT q[5],q[4]
+RZ q[1],(0.849200)
+RY q[2],(1.929200)
+RZ q[4],(0.849200)
+RY q[5],(1.929200)
+CNOT q[1],q[2]
+CNOT q[4],q[5]
+RY q[2],(2.277100)
+RY q[5],(2.277100)
+CNOT q[2],q[1]
+CNOT q[5],q[4]
+MEASURE q[0],c[0]
